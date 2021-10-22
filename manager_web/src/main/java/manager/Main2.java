@@ -20,9 +20,9 @@ public class Main2 {
 		MemberVo vo3 = new MemberVo(3, "test3", "1234", "nick3");
 		vo3.setRegdate(new Date());
 		
-		memberDao.insertMenber(vo1);  // 데이터베이스에 넣어주기
-		memberDao.insertMenber(vo2); 
-		memberDao.insertMenber(vo3); 
+		memberDao.insertMember(vo1);  // 데이터베이스에 넣어주기
+		memberDao.insertMember(vo2); 
+		memberDao.insertMember(vo3); 
 		
 		System.out.println("저장 완료!");
 		

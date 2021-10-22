@@ -7,11 +7,13 @@ import java.util.List;
 import java.util.Map;
 
 public class MemberDao {  // 범용적으로 정리  DAO : Data Access Object 데이터베이스의 data에 접근하기 위한 객체
+	// 데이터베이스와 쿼리를 주고받는 역할, 데이터베이스와 소통
+	
 	// db역할
 	private Map<Integer, MemberVo> db = new HashMap<>();
 	
 	// C
-	public void insertMenber(MemberVo vo) {
+	public void insertMember(MemberVo vo) {
 		vo.setRegdate(new Date());
 		db.put(vo.getNum(), vo);
 	}
